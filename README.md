@@ -17,6 +17,14 @@ Dockerfiles to build Kali images. See [straysheep-dev/docker-configs](https://gi
 | :--- | :---: | :---: |
 | `kalilinux/kali-rolling:latest` | `systemd` | ![Static Badge](https://img.shields.io/badge/supported-green) |
 
+`systemd` is currently supported and works, however the following service will fail to load and needs reviewed in the future:
+
+```
+$ systemctl --failed
+  UNIT                         LOAD   ACTIVE SUB    DESCRIPTION
+* systemd-modules-load.service loaded failed failed Load Kernel Modules
+
+```
 
 ## License
 
