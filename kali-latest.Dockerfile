@@ -21,7 +21,7 @@ ARG DEBIAN_FRONTEND=noninteractive
 # and isn't necessary to run the image
 RUN apt-get update \
     && apt-get install -y --no-install-recommends \
-    sudo coreutils systemd systemd-sysv \
+    sudo gpg coreutils systemd systemd-sysv \
     build-essential wget libffi-dev libssl-dev procps \
     python3 python3-pip python3-venv python3-dev python3-setuptools python3-wheel python3-apt \
     iproute2 dbus \
